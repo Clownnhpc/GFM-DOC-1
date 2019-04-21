@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>列表项 | GFM</title>
+    <meta name="description" content="GitHub Flavored Markdown Spec">
+    <script src="/GFM-DOC/js/baidu.js"></script>
+    
+    <link rel="preload" href="/GFM-DOC/assets/css/0.styles.6c0b5779.css" as="style"><link rel="preload" href="/GFM-DOC/assets/js/app.9230df67.js" as="script"><link rel="preload" href="/GFM-DOC/assets/js/2.00669f3a.js" as="script"><link rel="preload" href="/GFM-DOC/assets/js/76.4e3d42f6.js" as="script"><link rel="prefetch" href="/GFM-DOC/assets/js/10.f02b9843.js"><link rel="prefetch" href="/GFM-DOC/assets/js/11.664a706e.js"><link rel="prefetch" href="/GFM-DOC/assets/js/12.439443ee.js"><link rel="prefetch" href="/GFM-DOC/assets/js/13.7f03bd20.js"><link rel="prefetch" href="/GFM-DOC/assets/js/14.1b86b539.js"><link rel="prefetch" href="/GFM-DOC/assets/js/15.dad8a6e6.js"><link rel="prefetch" href="/GFM-DOC/assets/js/16.25786cae.js"><link rel="prefetch" href="/GFM-DOC/assets/js/17.2f4ee20a.js"><link rel="prefetch" href="/GFM-DOC/assets/js/18.9fa5371b.js"><link rel="prefetch" href="/GFM-DOC/assets/js/19.4a1f07c4.js"><link rel="prefetch" href="/GFM-DOC/assets/js/20.cf5f5278.js"><link rel="prefetch" href="/GFM-DOC/assets/js/21.f8af1eba.js"><link rel="prefetch" href="/GFM-DOC/assets/js/22.c5fe0533.js"><link rel="prefetch" href="/GFM-DOC/assets/js/23.21d4339a.js"><link rel="prefetch" href="/GFM-DOC/assets/js/24.b656f145.js"><link rel="prefetch" href="/GFM-DOC/assets/js/25.3ee4c26f.js"><link rel="prefetch" href="/GFM-DOC/assets/js/26.2415c05e.js"><link rel="prefetch" href="/GFM-DOC/assets/js/27.6935641e.js"><link rel="prefetch" href="/GFM-DOC/assets/js/28.797cfd7f.js"><link rel="prefetch" href="/GFM-DOC/assets/js/29.cae0fee8.js"><link rel="prefetch" href="/GFM-DOC/assets/js/3.2fedba8a.js"><link rel="prefetch" href="/GFM-DOC/assets/js/30.5baebe80.js"><link rel="prefetch" href="/GFM-DOC/assets/js/31.228a4a95.js"><link rel="prefetch" href="/GFM-DOC/assets/js/32.8198693b.js"><link rel="prefetch" href="/GFM-DOC/assets/js/33.a3b44e32.js"><link rel="prefetch" href="/GFM-DOC/assets/js/34.96cb9a0a.js"><link rel="prefetch" href="/GFM-DOC/assets/js/35.e6a5c69e.js"><link rel="prefetch" href="/GFM-DOC/assets/js/36.2e1a0881.js"><link rel="prefetch" href="/GFM-DOC/assets/js/37.a25a538c.js"><link rel="prefetch" href="/GFM-DOC/assets/js/38.3dd7305d.js"><link rel="prefetch" href="/GFM-DOC/assets/js/39.5d02870e.js"><link rel="prefetch" href="/GFM-DOC/assets/js/4.13e36050.js"><link rel="prefetch" href="/GFM-DOC/assets/js/40.c7b8ea44.js"><link rel="prefetch" href="/GFM-DOC/assets/js/41.bd3b3aee.js"><link rel="prefetch" href="/GFM-DOC/assets/js/42.73333b32.js"><link rel="prefetch" href="/GFM-DOC/assets/js/43.9fc41255.js"><link rel="prefetch" href="/GFM-DOC/assets/js/44.c9323c57.js"><link rel="prefetch" href="/GFM-DOC/assets/js/45.94d3edad.js"><link rel="prefetch" href="/GFM-DOC/assets/js/46.0e2dfd35.js"><link rel="prefetch" href="/GFM-DOC/assets/js/47.39b9e223.js"><link rel="prefetch" href="/GFM-DOC/assets/js/48.06f6f8fe.js"><link rel="prefetch" href="/GFM-DOC/assets/js/49.2c50e5c0.js"><link rel="prefetch" href="/GFM-DOC/assets/js/5.90093156.js"><link rel="prefetch" href="/GFM-DOC/assets/js/50.b9cb0317.js"><link rel="prefetch" href="/GFM-DOC/assets/js/51.9a530b71.js"><link rel="prefetch" href="/GFM-DOC/assets/js/52.dade34ad.js"><link rel="prefetch" href="/GFM-DOC/assets/js/53.3c9d6d38.js"><link rel="prefetch" href="/GFM-DOC/assets/js/54.79d11886.js"><link rel="prefetch" href="/GFM-DOC/assets/js/55.f363a7ab.js"><link rel="prefetch" href="/GFM-DOC/assets/js/56.b819ea71.js"><link rel="prefetch" href="/GFM-DOC/assets/js/57.bb1a541a.js"><link rel="prefetch" href="/GFM-DOC/assets/js/58.e2ec79ec.js"><link rel="prefetch" href="/GFM-DOC/assets/js/59.7cdd40ad.js"><link rel="prefetch" href="/GFM-DOC/assets/js/6.7a5ebdda.js"><link rel="prefetch" href="/GFM-DOC/assets/js/60.b87f365a.js"><link rel="prefetch" href="/GFM-DOC/assets/js/61.bdd0feb4.js"><link rel="prefetch" href="/GFM-DOC/assets/js/62.d2b8d862.js"><link rel="prefetch" href="/GFM-DOC/assets/js/63.eed9f431.js"><link rel="prefetch" href="/GFM-DOC/assets/js/64.97f11cb6.js"><link rel="prefetch" href="/GFM-DOC/assets/js/65.62690480.js"><link rel="prefetch" href="/GFM-DOC/assets/js/66.95e3d6a1.js"><link rel="prefetch" href="/GFM-DOC/assets/js/67.c0a8047e.js"><link rel="prefetch" href="/GFM-DOC/assets/js/68.1aa940ff.js"><link rel="prefetch" href="/GFM-DOC/assets/js/69.1e8a2456.js"><link rel="prefetch" href="/GFM-DOC/assets/js/7.1ccc32a7.js"><link rel="prefetch" href="/GFM-DOC/assets/js/70.4ffb2560.js"><link rel="prefetch" href="/GFM-DOC/assets/js/71.e700b2a4.js"><link rel="prefetch" href="/GFM-DOC/assets/js/72.7e477bee.js"><link rel="prefetch" href="/GFM-DOC/assets/js/73.ad9ad0ef.js"><link rel="prefetch" href="/GFM-DOC/assets/js/74.b88521be.js"><link rel="prefetch" href="/GFM-DOC/assets/js/75.04bc198c.js"><link rel="prefetch" href="/GFM-DOC/assets/js/77.3980cca5.js"><link rel="prefetch" href="/GFM-DOC/assets/js/78.110f9181.js"><link rel="prefetch" href="/GFM-DOC/assets/js/79.63b2a396.js"><link rel="prefetch" href="/GFM-DOC/assets/js/8.4bc167c5.js"><link rel="prefetch" href="/GFM-DOC/assets/js/9.19dfef2c.js">
+    <link rel="stylesheet" href="/GFM-DOC/assets/css/0.styles.6c0b5779.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/GFM-DOC/zh-hans/" class="home-link router-link-active"><!----> <span class="site-name">GFM</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/GFM-DOC/zh-hans/介绍/" class="nav-link">介绍</a></div><div class="nav-item"><a href="/GFM-DOC/zh-hans/预热/" class="nav-link">预热</a></div><div class="nav-item"><a href="/GFM-DOC/zh-hans/块和内联/" class="nav-link">块和内联</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">叶子块</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/" class="nav-link">叶子块</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/专门的换行.html" class="nav-link">专门的换行</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/ATX标题.html" class="nav-link">ATX标题</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/Setext标题.html" class="nav-link">Setext标题</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/缩进代码块.html" class="nav-link">缩进代码块</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/围栏代码块.html" class="nav-link">围栏代码块</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/HTML块.html" class="nav-link">HTML块</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/链接引用定义.html" class="nav-link">链接引用定义</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/段落.html" class="nav-link">段落</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/空行.html" class="nav-link">空行</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/表格（拓展）.html" class="nav-link">表格（拓展）</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">容器块</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/容器块/" class="nav-link">容器块</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/容器块/块引用.html" class="nav-link">块引用</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/容器块/列表项.html" class="nav-link">列表项</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/容器块/任务列表项（拓展）.html" class="nav-link">任务列表项（拓展）</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/容器块/列表.html" class="nav-link">列表</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">内联</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/" class="nav-link">内联</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/反斜杠转义.html" class="nav-link">反斜杠转义</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/实体和数字字符引用.html" class="nav-link">实体和数字字符引用</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/行内代码.html" class="nav-link">行内代码</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/强调.html" class="nav-link">强调</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/删除线（拓展）.html" class="nav-link">删除线（拓展）</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/链接.html" class="nav-link">链接</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/图片.html" class="nav-link">图片</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/自动链接.html" class="nav-link">自动链接</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/自动链接（拓展）.html" class="nav-link">自动链接（拓展）</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/原生HTML.html" class="nav-link">原生HTML</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/无效HTML.html" class="nav-link">无效HTML</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/强制换行.html" class="nav-link">强制换行</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/软换行.html" class="nav-link">软换行</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/文本内容.html" class="nav-link">文本内容</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">附录</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/GFM-DOC/Appendix/" class="nav-link">Appendix: A parsing strategy</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/Appendix/Overview.html" class="nav-link">Overview</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/Appendix/block structure.html" class="nav-link">block structure</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/Appendix/inline structure.html" class="nav-link">inline structure</a></li></ul></div></div><div class="nav-item"><a href="https://docschina.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  印记中文
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/GFM-DOC/" class="nav-link">English</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/容器块/列表项.html" class="nav-link">简体中文</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/GFM-DOC/zh-hans/介绍/" class="nav-link">介绍</a></div><div class="nav-item"><a href="/GFM-DOC/zh-hans/预热/" class="nav-link">预热</a></div><div class="nav-item"><a href="/GFM-DOC/zh-hans/块和内联/" class="nav-link">块和内联</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">叶子块</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/" class="nav-link">叶子块</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/专门的换行.html" class="nav-link">专门的换行</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/ATX标题.html" class="nav-link">ATX标题</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/Setext标题.html" class="nav-link">Setext标题</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/缩进代码块.html" class="nav-link">缩进代码块</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/围栏代码块.html" class="nav-link">围栏代码块</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/HTML块.html" class="nav-link">HTML块</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/链接引用定义.html" class="nav-link">链接引用定义</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/段落.html" class="nav-link">段落</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/空行.html" class="nav-link">空行</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/叶子块/表格（拓展）.html" class="nav-link">表格（拓展）</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">容器块</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/容器块/" class="nav-link">容器块</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/容器块/块引用.html" class="nav-link">块引用</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/容器块/列表项.html" class="nav-link">列表项</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/容器块/任务列表项（拓展）.html" class="nav-link">任务列表项（拓展）</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/容器块/列表.html" class="nav-link">列表</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">内联</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/" class="nav-link">内联</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/反斜杠转义.html" class="nav-link">反斜杠转义</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/实体和数字字符引用.html" class="nav-link">实体和数字字符引用</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/行内代码.html" class="nav-link">行内代码</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/强调.html" class="nav-link">强调</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/删除线（拓展）.html" class="nav-link">删除线（拓展）</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/链接.html" class="nav-link">链接</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/图片.html" class="nav-link">图片</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/自动链接.html" class="nav-link">自动链接</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/自动链接（拓展）.html" class="nav-link">自动链接（拓展）</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/原生HTML.html" class="nav-link">原生HTML</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/无效HTML.html" class="nav-link">无效HTML</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/强制换行.html" class="nav-link">强制换行</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/软换行.html" class="nav-link">软换行</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/内联/文本内容.html" class="nav-link">文本内容</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">附录</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/GFM-DOC/Appendix/" class="nav-link">Appendix: A parsing strategy</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/Appendix/Overview.html" class="nav-link">Overview</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/Appendix/block structure.html" class="nav-link">block structure</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/Appendix/inline structure.html" class="nav-link">inline structure</a></li></ul></div></div><div class="nav-item"><a href="https://docschina.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  印记中文
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/GFM-DOC/" class="nav-link">English</a></li><li class="dropdown-item"><!----> <a href="/GFM-DOC/zh-hans/容器块/列表项.html" class="nav-link">简体中文</a></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="content default"><h3 id="列表项"><a href="#列表项" aria-hidden="true" class="header-anchor">#</a> 列表项</h3> <p><a href="https://github.github.com/gfm/#list-marker" target="_blank" rel="noopener noreferrer">列表标记<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>包括<a href="https://github.github.com/gfm/#bullet-list-marker" target="_blank" rel="noopener noreferrer">无序列表标记<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>或<a href="https://github.github.com/gfm/#ordered-list-marker" target="_blank" rel="noopener noreferrer">有序列表标记<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。
+<a href="https://github.github.com/gfm/#bullet-list-marker" target="_blank" rel="noopener noreferrer">无序列表标记<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>包含<code>-</code>，<code>+</code>，或者<code>*</code>等字符。
+<a href="https://github.github.com/gfm/#ordered-list-marker" target="_blank" rel="noopener noreferrer">有序列表标记<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>由 1-9 位的阿拉伯数字(<code>0-9</code>)，或者像「a <code>.</code>」，「a <code>)</code>」等字符的序列组成（有长度限制的原因是某些浏览器中超过十位数字会产生溢出）。
+<a href="https://github.github.com/gfm/#list-items" target="_blank" rel="noopener noreferrer">列表项<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>由以下规则定义：</p> <ol><li><strong>一般原则 .</strong> 如果行序列 <em>Ls</em> 构成以<a href="https://github.github.com/gfm/#non-whitespace-character" target="_blank" rel="noopener noreferrer">非空字符<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>开头且彼此相隔不多于一行空行的块序列（Bs），且 <em>M</em> 是宽度 <em>W</em> 的列表标记后面有 1≤ <em>N</em> ≤4 个空格，将 <em>M</em> 和其后的空格前置到 <em>Ls</em> 的第一行，并将 <em>Ls</em> 的后续行缩进 <em>W</em> + <em>N</em> 个空格之后，其结果成为将 <em>Bs</em> 作为其内容的列表项。列表项的类型（无序或是有序）由其列表标记决定。如果列表项为有序，则其结果也会拥有由其有序列表标记决定的序号。
+例外：
+<ol><li>当<a href="https://github.github.com/gfm/#lists" target="_blank" rel="noopener noreferrer">列表<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>中的第一个列表项中断一个段落时，除非它在行中出现，否则将会被认为是<a href="https://github.github.com/gfm/#paragraph-continuation-text" target="_blank" rel="noopener noreferrer">段落延续文本<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，此时(a)  <em>Ls</em> 不能以空行起始；(b)如果列表项为有序，起始数字必须为 1 。</li> <li>如果一行文本是<a href="https://github.github.com/gfm/#thematic-breaks" target="_blank" rel="noopener noreferrer">标题行<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，那么这不是一个列表项。</li></ol></li></ol> <p>举例来说，让 <em>Ls</em> 作为行<br> <a href="https://github.github.com/gfm/#%E7%A4%BA%E4%BE%8B-224" target="_blank" rel="noopener noreferrer">示例 224<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>A paragraph
+with two lines.
+
+    indented code
+
+&gt; A block quote.
+</code></pre> <p></p> <pre><code>&lt;p&gt;A paragraph
+with two lines.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;indented code
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A block quote.&lt;/p&gt;
+&lt;/blockquote&gt;
+</code></pre> <p>让 <em>M</em> 作为标记<code>1.</code>， <em>N</em>  = 2 ，此时根据第一条规则，出现起始序号为 1 的有序列表项， <em>Ls</em> 也是同样：<br> <a href="https://github.github.com/gfm/#example-225" target="_blank" rel="noopener noreferrer">示例 225<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>1.  A paragraph
+    with two lines.
+
+        indented code
+
+    &gt; A block quote.
+</code></pre> <p></p> <pre><code>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;A paragraph
+with two lines.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;indented code
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A block quote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <p>需要注意的是列表标记后的文本位置决定了列表项后续块中需要多少缩进。如果列表标记占用了 2 个字符空间，列表项与<a href="https://github.github.com/gfm/#non-whitespace-character" target="_blank" rel="noopener noreferrer">非空字符<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>之间有 3 个字符空间，那么块必须要缩进 5 个字符空间才能包含进列表项。<br>
+下面的示例将展示需要多少缩进才能使内容成为列表项：<br> <a href="https://github.github.com/gfm/#%E7%A4%BA%E4%BE%8B-226" target="_blank" rel="noopener noreferrer">示例 226<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>- one
+
+ two
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;one&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;two&lt;/p&gt;
+</code></pre> <p><a href="https://github.github.com/gfm/#example-227" target="_blank" rel="noopener noreferrer">示例 227<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>- one
+
+  two
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;one&lt;/p&gt;
+&lt;p&gt;two&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p><a href="https://github.github.com/gfm/#example-228" target="_blank" rel="noopener noreferrer">示例 228<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code> -    one
+
+     two
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;one&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt; two
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre> <p><a href="https://github.github.com/gfm/#example-229" target="_blank" rel="noopener noreferrer">示例 229<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code> -    one
+
+      two
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;one&lt;/p&gt;
+&lt;p&gt;two&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p>这很容易让人联想到用列来考虑问题：连续块必须至少缩进到列表标记后的有第一个<a href="https://github.github.com/gfm/#non-whitespace-character" target="_blank" rel="noopener noreferrer">非空字符<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>的列（即与上一个列表项对齐）。但是这不完全正确，列表标记之后的空格确定需要多少相对缩进，此缩进到达哪一列将取决于列表项怎样嵌入到其他结构中，如下例所示：<br> <a href="https://github.github.com/gfm/#example-230" target="_blank" rel="noopener noreferrer">示例 230<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>   &gt; &gt; 1.  one
+&gt;&gt;
+&gt;&gt;     two
+</code></pre> <p></p> <pre><code>&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;one&lt;/p&gt;
+&lt;p&gt;two&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</code></pre> <p>这里的<code>two</code>与列表标记<code>1.</code>出现在同一列，但因为在最后一个块引用标记中留出了足够的缩进，所以它其实是包含在列表项中。<br>
+反过来也可以，在下面的示例中，单词<code>two</code>出现在列表项<code>one</code>的右侧，但它不是一个列表项，因为它没有足够的缩进来超过块引用标记：<br> <a href="https://github.github.com/gfm/#example-231" target="_blank" rel="noopener noreferrer">示例 231<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>&gt;&gt;- one
+&gt;&gt;
+  &gt;  &gt; two
+</code></pre> <p></p> <pre><code>&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;one&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;two&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</code></pre> <p>注意列表标记与后续内容之间必须至少间隔一个空格，所以这些不是列表项：<br> <a href="https://github.github.com/gfm/#example-232" target="_blank" rel="noopener noreferrer">示例 232<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>-one
+
+2.two
+</code></pre> <p></p> <pre><code>&lt;p&gt;-one&lt;/p&gt;
+&lt;p&gt;2.two&lt;/p&gt;
+</code></pre> <p>一个列表项中可能包含被一行或多行空行分割的块。<br> <a href="https://github.github.com/gfm/#example-233" target="_blank" rel="noopener noreferrer">示例 233<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>- foo
+
+
+  bar
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;foo&lt;/p&gt;
+&lt;p&gt;bar&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p>一个列表项可能包含多种块：<br> <a href="https://github.github.com/gfm/#example-234" target="_blank" rel="noopener noreferrer">示例 234<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>1.  foo
+
+    ```
+    bar
+    ```
+
+    baz
+
+    &gt; bam
+</code></pre> <p></p> <pre><code>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;foo&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;baz&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;bam&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <p>包含缩进代码块的列表项将逐字保存代码块中的空行。<br> <a href="https://github.github.com/gfm/#example-235" target="_blank" rel="noopener noreferrer">示例 235<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>- Foo
+
+      bar
+
+
+      baz
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Foo&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bar
+
+
+baz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p>注意，有序列表起始编号必须小于等于九位数：<br> <a href="https://github.github.com/gfm/#example-236" target="_blank" rel="noopener noreferrer">示例 236<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>123456789. ok
+</code></pre> <p></p> <pre><code>&lt;ol start=&quot;123456789&quot;&gt;
+&lt;li&gt;ok&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <p><a href="https://github.github.com/gfm/#example-237" target="_blank" rel="noopener noreferrer">示例 237<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>1234567890. not ok
+</code></pre> <p></p> <pre><code>&lt;p&gt;1234567890. not ok&lt;/p&gt;
+</code></pre> <p>某些起始序号可能以 0 开头：<br> <a href="https://github.github.com/gfm/#example-238" target="_blank" rel="noopener noreferrer">示例 238<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>0. ok
+</code></pre> <p></p> <pre><code>&lt;ol start=&quot;0&quot;&gt;
+&lt;li&gt;ok&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <p><a href="https://github.github.com/gfm/#example-239" target="_blank" rel="noopener noreferrer">示例 239<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>003. ok
+</code></pre> <p></p> <pre><code>&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;ok&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <p>起始序号不能为负数：<br> <a href="https://github.github.com/gfm/#example-240" target="_blank" rel="noopener noreferrer">示例 240<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>-1. not ok
+</code></pre> <p></p> <pre><code>&lt;p&gt;-1. not ok&lt;/p&gt;
+</code></pre> <ol start="2"><li><strong>以缩进代码起始的项.</strong> 如果行序列 <em>Ls</em> 构成块 <em>Bs</em> 的起始序列，其带有缩进的代码块没有被空行分隔，并且 <em>M</em> 是宽度 <em>W</em> 后带有一个空格的列表标记，那么前置 <em>M</em> 以及空格至 <em>Ls</em> 的第一行并且将后续行缩进 <em>W</em> +1 个空格的结果是成为一个将 <em>Bs</em> 作为其内容的列表项，如果一行为空，那么就不需要缩进。列表项的类型（无序或是有序）由其列表标记决定。如果列表项为有序，则其结果也会拥有由其有序列表标记决定的序号。</li></ol> <p>缩进的代码块必须缩进超过区域边缘的四个空格，其中文本将包含在列表项中。 以下情况下是 6 个空格：<br> <a href="https://github.github.com/gfm/#example-241" target="_blank" rel="noopener noreferrer">示例 241<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>- foo
+
+      bar
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;foo&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p>以下情况是 11 个空格：<br> <a href="https://github.github.com/gfm/#example-242" target="_blank" rel="noopener noreferrer">示例 242<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>  10.  foo
+
+           bar
+</code></pre> <p></p> <pre><code>&lt;ol start=&quot;10&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;foo&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <p>如果列表项中的  <em>第一个</em>  块是缩进的代码块，那么通过规则#2，内容必须在列表标记之后缩进 <em>1</em> 个空格：<br> <a href="https://github.github.com/gfm/#%E7%A4%BA%E4%BE%8B-243" target="_blank" rel="noopener noreferrer">示例 243<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>    indented code
+
+paragraph
+
+    more code
+</code></pre> <p></p> <pre><code>&lt;pre&gt;&lt;code&gt;indented code
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;paragraph&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;more code
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre> <p><a href="https://github.github.com/gfm/#example-244" target="_blank" rel="noopener noreferrer">示例 244<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>1.     indented code
+
+   paragraph
+
+       more code
+</code></pre> <p></p> <pre><code>&lt;ol&gt;
+&lt;li&gt;
+&lt;pre&gt;&lt;code&gt;indented code
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;paragraph&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;more code
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <p>注意，额外的空格缩进将会被认为是代码块内的空格：<br> <a href="https://github.github.com/gfm/#example-245" target="_blank" rel="noopener noreferrer">示例 245<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>1.      indented code
+
+   paragraph
+
+       more code
+</code></pre> <p></p> <pre><code>&lt;ol&gt;
+&lt;li&gt;
+&lt;pre&gt;&lt;code&gt; indented code
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;paragraph&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;more code
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <p>注意，规则#1 和#2 仅适用于两种情况:(a)列表项中有以<a href="https://github.github.com/gfm/#non-whitespace-character" target="_blank" rel="noopener noreferrer">非空字符<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>开头的行，(b)以缩进代码快开头的情况。在紧接着的例子中，第一个块带有三个空格的缩进，这两条规则不允许我们通过缩进整个文本或者添加列表标记来使其成为列表项：<br> <a href="https://github.github.com/gfm/#example-246" target="_blank" rel="noopener noreferrer">示例 246<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>   foo
+
+bar
+</code></pre> <p></p> <pre><code>&lt;p&gt;foo&lt;/p&gt;
+&lt;p&gt;bar&lt;/p&gt;
+</code></pre> <p><a href="https://github.github.com/gfm/#example-247" target="_blank" rel="noopener noreferrer">示例 247<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>-    foo
+
+  bar
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;bar&lt;/p&gt;
+</code></pre> <p>这不是一个严格的限制，因为当块有 1-3 个空格的缩进时，可以在不改变解释的情况下删除缩进，可以在此使用规则#1，那么在上面的例子中：<br> <a href="https://github.github.com/gfm/#example-248" target="_blank" rel="noopener noreferrer">示例 248<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>-  foo
+
+   bar
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;foo&lt;/p&gt;
+&lt;p&gt;bar&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <ol start="3"><li><strong>以空行开头的项.</strong> 如果一个以<a href="https://github.github.com/gfm/#blank-line" target="_blank" rel="noopener noreferrer">空行<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>起始的行序列 <em>Ls</em> 构成一个（可能为空）的块序列 <em>Bs</em> ，并且之间没有空行。 <em>M</em> 是宽度W的列表标记，那么前置  <em>M</em>  到 <em>Ls</em> 的第一行，并且将 <em>Ls</em> 的后续行缩进  <em>W</em> +1个空格，其结果是成为一个将 <em>Bs</em> 作为其内容的列表项，如果一行为空，那么就不需要缩进。列表项的类型（无序或是有序）由其列表标记决定。如果列表项为有序，则其结果也会拥有由其有序列表标记决定的序号。</li></ol> <p>下列是一些以空行起始但非空的列表项：<br> <a href="https://github.github.com/gfm/#%E7%A4%BA%E4%BE%8B-249" target="_blank" rel="noopener noreferrer">示例 249<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>-
+  foo
+-
+  ```
+  bar
+  ```
+-
+      baz
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;li&gt;
+&lt;pre&gt;&lt;code&gt;bar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;pre&gt;&lt;code&gt;baz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p>当列表项以空行开头时，列表标记后面的空格数不影响所需的缩进：<br> <a href="https://github.github.com/gfm/#example-250" target="_blank" rel="noopener noreferrer">示例 250<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>-   
+  foo
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p>一个列表项开头至多有一行空行，在下面的例子中，<code>foo</code>不属于列表项：<br> <a href="https://github.github.com/gfm/#example-251" target="_blank" rel="noopener noreferrer">示例 251<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>-
+
+  foo
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;foo&lt;/p&gt;
+</code></pre> <p>这是一个空的无序列表：<br> <a href="https://github.github.com/gfm/#example-252" target="_blank" rel="noopener noreferrer">示例 252<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>- foo
+-
+- bar
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;bar&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p><a href="https://github.github.com/gfm/#list-marker" target="_blank" rel="noopener noreferrer">列表标记<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>后面跟多少空格无所谓：<br> <a href="https://github.github.com/gfm/#example-253" target="_blank" rel="noopener noreferrer">示例 253<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>- foo
+-   
+- bar
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;bar&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p>这是一个空的有序列表：<br> <a href="https://github.github.com/gfm/#example-254" target="_blank" rel="noopener noreferrer">示例 254<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>1. foo
+2.
+3. bar
+</code></pre> <p></p> <pre><code>&lt;ol&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;bar&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <p>一个列表可能在开头或者末尾有一个空的列表项：<br> <a href="https://github.github.com/gfm/#example-255" target="_blank" rel="noopener noreferrer">示例 255<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>*
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p>当然，一个空的列表项不能中断段落：<br> <a href="https://github.github.com/gfm/#example-256" target="_blank" rel="noopener noreferrer">示例 256<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>foo
+*
+
+foo
+1.
+</code></pre> <p></p> <pre><code>&lt;p&gt;foo
+*&lt;/p&gt;
+&lt;p&gt;foo
+1.&lt;/p&gt;
+</code></pre> <ol start="4"><li><strong>缩进.</strong> 如果行序列 <em>Ls</em> 根据规则#1，#2或#3构成列表项，则将 <em>Ls</em> 中的每一行缩进 1-3 个空格（每行缩进都相同）之后仍然是一个属性与内容与原来相同的列表项。如果有一行为空，则其不需要缩进。</li></ol> <p>缩进一个空格：<br> <a href="https://github.github.com/gfm/#example-257" target="_blank" rel="noopener noreferrer">示例 257<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code> 1.  A paragraph
+     with two lines.
+
+         indented code
+
+     &gt; A block quote.
+</code></pre> <p></p> <pre><code>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;A paragraph
+with two lines.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;indented code
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A block quote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <p>缩进两个空格：<br> <a href="https://github.github.com/gfm/#example-258" target="_blank" rel="noopener noreferrer">示例 258<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>  1.  A paragraph
+      with two lines.
+
+          indented code
+
+      &gt; A block quote.
+</code></pre> <p></p> <pre><code>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;A paragraph
+with two lines.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;indented code
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A block quote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <p>缩进三个空格：<br> <a href="https://github.github.com/gfm/#example-259" target="_blank" rel="noopener noreferrer">示例 259<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>   1.  A paragraph
+       with two lines.
+
+           indented code
+
+       &gt; A block quote.
+</code></pre> <p></p> <pre><code>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;A paragraph
+with two lines.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;indented code
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A block quote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <p>四个空格的缩进构成代码块：<br> <a href="https://github.github.com/gfm/#example-260" target="_blank" rel="noopener noreferrer">示例 260<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>    1.  A paragraph
+        with two lines.
+
+            indented code
+
+        &gt; A block quote.
+</code></pre> <p></p> <pre><code>&lt;pre&gt;&lt;code&gt;1.  A paragraph
+    with two lines.
+
+        indented code
+
+    &amp;gt; A block quote.
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre> <ol start="5"><li><strong>延迟原则.</strong> 如果 <em>Ls</em> 中的多行构成一个含有内容 <em>Bs</em> 的<a href="https://github.github.com/gfm/#list-items" target="_blank" rel="noopener noreferrer">列表项<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，从一行或多行的<a href="https://github.github.com/gfm/#non-whitespace-character" target="_blank" rel="noopener noreferrer">非空字符<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>后是<a href="https://github.github.com/gfm/#paragraph-continuation-text" target="_blank" rel="noopener noreferrer">段落延续文本<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>的行前删除部分或者全部的缩进会使列表项仍拥有与之前相同的属性与内容。未缩进的行被称为<a href="https://github.github.com/gfm/#lazy-continuation-line" target="_blank" rel="noopener noreferrer">延迟行<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</li></ol> <p>以下是一个关于<a href="https://github.github.com/gfm/#lazy-continuation-line" target="_blank" rel="noopener noreferrer">延迟行<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>的例子：<br> <a href="https://github.github.com/gfm/#example-261" target="_blank" rel="noopener noreferrer">示例 261<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>  1.  A paragraph
+with two lines.
+
+          indented code
+
+      &gt; A block quote.
+</code></pre> <p></p> <pre><code>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;A paragraph
+with two lines.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;indented code
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A block quote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <p>缩进可以被删除一部分：<br> <a href="https://github.github.com/gfm/#example-262" target="_blank" rel="noopener noreferrer">示例 262<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>  1.  A paragraph
+    with two lines.
+</code></pre> <p></p> <pre><code>&lt;ol&gt;
+&lt;li&gt;A paragraph
+with two lines.&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <p>以下示例说明延迟原则在嵌套结构中仍有作用：<br> <a href="https://github.github.com/gfm/#example-263" target="_blank" rel="noopener noreferrer">示例 263<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>&gt; 1. &gt; Blockquote
+continued here.
+</code></pre> <p></p> <pre><code>&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Blockquote
+continued here.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+</code></pre> <p><a href="https://github.github.com/gfm/#example-264" target="_blank" rel="noopener noreferrer">示例 264<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>&gt; 1. &gt; Blockquote
+&gt; continued here.
+</code></pre> <p></p> <pre><code>&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Blockquote
+continued here.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+</code></pre> <ol start="6"><li><strong>以上</strong> 就是<a href="https://github.github.com/gfm/#list-items" target="_blank" rel="noopener noreferrer">列表项<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>的全部五条规则。</li></ol> <p>子列表也需要遵循<a href="https://github.github.com/gfm/#list-items" target="_blank" rel="noopener noreferrer">以上<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>规则，一个子列表必须与段落所在列表项中所需缩进的空格数量一致。
+所以在以下示例中需要两个空格的缩进：<br> <a href="https://github.github.com/gfm/#%E7%A4%BA%E4%BE%8B-265" target="_blank" rel="noopener noreferrer">示例 265<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>- foo
+  - bar
+    - baz
+      - boo
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;foo
+&lt;ul&gt;
+&lt;li&gt;bar
+&lt;ul&gt;
+&lt;li&gt;baz
+&lt;ul&gt;
+&lt;li&gt;boo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p>一个空格缩进不够的情况：<br> <a href="https://github.github.com/gfm/#%E7%A4%BA%E4%BE%8B-266" target="_blank" rel="noopener noreferrer">示例 266<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>- foo
+ - bar
+  - baz
+   - boo
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;li&gt;bar&lt;/li&gt;
+&lt;li&gt;baz&lt;/li&gt;
+&lt;li&gt;boo&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p>因为标记占位过多，所以在这里需要四个空格的缩进：<br> <a href="https://github.github.com/gfm/#example-267" target="_blank" rel="noopener noreferrer">示例 267<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>10) foo
+    - bar
+</code></pre> <p></p> <pre><code>&lt;ol start=&quot;10&quot;&gt;
+&lt;li&gt;foo
+&lt;ul&gt;
+&lt;li&gt;bar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <p>三个空格缩进的不够的情况：<br> <a href="https://github.github.com/gfm/#example-268" target="_blank" rel="noopener noreferrer">示例 268<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>10) foo
+   - bar
+</code></pre> <p></p> <pre><code>&lt;ol start=&quot;10&quot;&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;bar&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p>列表项中的第一块可能是一个列表：<br> <a href="https://github.github.com/gfm/#example-269" target="_blank" rel="noopener noreferrer">示例 269<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>- - foo
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p><a href="https://github.github.com/gfm/#%E7%A4%BA%E4%BE%8B-270" target="_blank" rel="noopener noreferrer">示例 270<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>1. - 2. foo
+</code></pre> <p></p> <pre><code>&lt;ol&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <p>一个列表项可以包含一个标题：<br> <a href="https://github.github.com/gfm/#example-271" target="_blank" rel="noopener noreferrer">示例 271<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <pre><code>- # Foo
+- Bar
+  ---
+  baz
+</code></pre> <p></p> <pre><code>&lt;ul&gt;
+&lt;li&gt;
+&lt;h1&gt;Foo&lt;/h1&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2&gt;Bar&lt;/h2&gt;
+baz&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p>5.2.1启发</p> <p>John Gruber 的 Markdown spec 中这样描述列表项：</p> <ol><li>「列表标记通常从左边距开始，但最多可缩进三个空格。 列表标记必须后跟一个或多个空格或制表符。」</li> <li>「为了使列表看起来更美观，您可以使用悬挂缩进来包装列表项.... 但如果你不想，那就算了。」</li> <li>「列表项可能包含多个段落。 列表项中的每个后续段落必须缩进 4 个空格或一个缩进键。」</li> <li>「如果你缩进后续段落的每一行，看上去很好看，但在这里，Markdown允许你偷懒。」</li> <li>「要将块引用放入列表项中，块引用的<code>&gt;</code>必须要缩进。」</li> <li>「要将代码块放在列表项中，代码块需要缩进两次--8个空格或两个缩进键。」</li></ol> <p>这些规则指定列表项下的段落必须缩进四个空格（可能是从左边距，而不是列表标记的开头，但这没有提及），并且列表项下的代码必须缩进八个空格而不是通常的四个。他们还说块引用必须缩进，但没说缩进多少; 但是，给出的示例有四个空格缩进。虽然没有其他类型的块级内容，但推断列表项下的所有块元素（包括其他列表）必须缩进四个空格当然是合理的。 这个原则被称为 <em>四空格规则</em> 。</p> <p>四空格规则是明确且有原则的，如果参考实现<code>Markdown.pl</code>遵循它，它可能会成为标准。 但是至少在外层，<code>Markdown.pl</code>允许段落和子列表以两个空格缩进开始。 更糟糕的是，它的行为是不一致的：外层列表的子列表需要两个空格缩进，但是该子列表的子列表需要三个空格。毫无意外，Markdown 的不同应用已经开发出非常不同的规则来确定列表项下的内容。（例如，Pandoc 和 python-Markdown 坚持 Gruber 的语法描述和四空格规则，而 discount，redcarpet，marked，PHP Markdown 和其他语法说明更接近<code>Markdown.pl</code>）</p> <p>不巧的是，鉴于应用之间的差异，没有办法为列表项提供规范，且保证不会破坏任何现有文档。 但是，这里给出的规范应该正确处理使用四空格规则或更兼容的 <code>Markdown.pl</code> 行为格式化的列表，前提是它们以人类自然阅读的方式布局。</p> <p>这里的策略是让列表标记的宽度和缩进确定块包含在列表项下所需的缩进，而不是固定的和任意数字。 作者可以将列表项的主体视为一个单元，其缩进到足以适合列表标记（以及列表标记上的任何缩进）。 （延迟原则，＃5，允许连续行在需要时不缩进。）</p> <p>我们承认这条规则优于任何需要距离边距固定的缩进层级，四空格规则很明确但是不自然，而且非常不直观。</p> <pre><code>- foo
+
+  bar
+
+  - baz
+</code></pre> <p>应该被解析为两个带有插入段落的列表，</p> <pre><code>&lt;ul&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;bar&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;baz&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p>像四空格规则要求的那样，而不是一个单列表，</p> <pre><code>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;foo&lt;/p&gt;
+&lt;p&gt;bar&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;baz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p>你可以通过学习来确定在哪些地方应该使用四空格规则，但是不能纯靠猜，这经常成为初学者的难题。<br>
+使用两空格规则会有帮助吗？问题是像这样的规则，以及允许初始列表标记的 1-3 个空格缩进的规则，允许缩进 <em>小于</em> 原始列表标记的文本被包括在列表项中。 举例来讲<code>Markdown.pl</code>会这样解析</p> <pre><code>   - one
+
+  two
+</code></pre> <p>作为将<code>two</code>作为延续段落的单个列表项：</p> <pre><code>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;one&lt;/p&gt;
+&lt;p&gt;two&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <p>同样的</p> <pre><code>&gt;   - one
+&gt;
+&gt;  two
+</code></pre> <p>像这样</p> <pre><code>&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;one&lt;/p&gt;
+&lt;p&gt;two&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</code></pre> <p>这也太不直观了。<br>
+我们可能需要从列表标记中固定缩进（例如，两个空格，甚至一个空格），而不是从边距要求固定缩进（它本身可以缩进）。该提议将删除最后讨论的异常情况。与上面提到的规范不同，它会将后续跟随的内容计为带有子项的列表项，尽管<code>bar</code>段落的缩进没有<code>foo</code>段落的远：</p> <pre><code> 10. foo
+
+   bar
+</code></pre> <p>虽然从文本上看上去像是一个<code>bar</code>段落的列表项，有利于这个提议。但是在这个提议中在列表标记后的缩进代码必须缩进 6 个空格，这会违反很多已经存在的标记规则，比如下列情况：</p> <pre><code>1.  foo
+
+        indented code
+</code></pre> <p>代码缩进了 8 个空格，上面的规范按照规定预期来解析文本，因为代码块的缩进从<code>foo</code>的起始位置开始计算。<br>
+需要特殊处理的一种情况是以缩进代码 <em>开头</em> 的列表项。 在这种情况下需要多少缩进？因为我们没有「第一段」来衡量。 规则＃2简单地规定，在这种情况下，我们需要列表标记中的一个空格缩进（然后是缩进代码的正常四个空格）。 在列表标记加上其初始缩进占用四个空格（常见情况）的情况下，符合四空格规则，但在其他情况下则不同。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2019-4-21 15:50:52</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/GFM-DOC/assets/js/app.9230df67.js" defer></script><script src="/GFM-DOC/assets/js/2.00669f3a.js" defer></script><script src="/GFM-DOC/assets/js/76.4e3d42f6.js" defer></script>
+  </body>
+</html>
